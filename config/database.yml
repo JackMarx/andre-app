@@ -50,5 +50,5 @@ test:
 production:
     database: andre-app-production
     adapter: postgresql
-         encoding: unicode
-         pool: 5
+        encoding: unicode
+        pool: 5
