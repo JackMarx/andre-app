@@ -9,9 +9,9 @@
 </tr>
 
 <% @visits.each do |visit| %>
-  <th>visit.id</th>
-  <th>visit.url</th>
-  <th>visit.start_time</th>
-  <th>visit.end_time</th>
-  <th>visit.duration</th>
+  <th><%= visit.id %></th>
+  <th><%= visit.url %></th>
+  <th><%= visit.start_time %></th>
+  <th><%= visit.end_time %></th>
+  <th><%= visit.duration %></th>
 <% end %>
