@@ -4,7 +4,7 @@ class VisitsController < ApplicationController
   end
 
   def create
-    Visit.create({params["url"]})
+    Visit.create({url: params["url"]})
     render json: {message: "success"}
   end
 end
