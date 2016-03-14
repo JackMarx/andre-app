@@ -4,6 +4,6 @@ class Visit < ActiveRecord::Base
   has_one :website, through: :relation
 
   def duration
-    end_time - start_time
+    end_time && start_time ? end_time - start_time : 0
   end
 end
